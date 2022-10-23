@@ -4,7 +4,7 @@ export const SocialProfile = styled.div `
   width: 280px;
   height: 345px;
   border-radius: 10px;
-  background-color: white;
+  background-color: ${props => props.theme.colors.bgcCard};
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
     0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
@@ -14,7 +14,7 @@ export const SocialProfile = styled.div `
 export const Description = styled.div `
   text-align: center;
   padding: 10px;
-  border-bottom: 1px solid lightslategray;
+  border-bottom: ${props => `1px solid ${props.theme.colors.border}`};
 `;
 
 export const Avatar = styled.img `
@@ -28,7 +28,7 @@ export const Name = styled.h2 `
 `;
 
 export const Info = styled.p `
-  color: grey;
+  color: ${props => props.theme.colors.secondTextColor};
   margin-bottom: 10px;
 `;
 
@@ -36,7 +36,7 @@ export const Stats = styled.ul `
   display: flex;
 
   border-radius: 0 0 10px 10px;
-  background-color: lightgrey; 
+  background-color: ${props => props.theme.colors.bgcList}; 
 `;
 
 export const Item = styled.li `
@@ -49,12 +49,12 @@ export const Item = styled.li `
   padding: 10px;
 
   :not(:last-child) {
-    border-right: 1px solid lightslategray;
+    border-right: ${props => `1px solid ${props.theme.colors.border}`};
   }
 `;
 
 export const Label = styled.span `
-  color: grey;
+  color: ${props => props.theme.colors.secondTextColor};
   margin-bottom: 5px;
 `;
 
