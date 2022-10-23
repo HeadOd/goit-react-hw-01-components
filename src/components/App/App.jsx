@@ -1,9 +1,12 @@
-import { Profile } from "./Profile/Profile";
-import user from "../user/user.json";
+import { Global } from "@emotion/react";
+import user from "../../user/user.json";
+import { Profile } from "../Profile/Profile";
+import { Box, GlobalStyles } from "./App.styled";
 
 export const App = () => {
   return (
-    <div>
+    <Box>
+      <Global styles={GlobalStyles} />
       <Profile
   username={user.username}
   tag={user.tag}
@@ -13,6 +16,6 @@ export const App = () => {
   views={user.stats.views}
   likes={user.stats.likes}
 />
-    </div>
+    </Box>
   );
 };
