@@ -27,7 +27,7 @@ export const Profile = ({ username, tag, location, avatar, followers, views, lik
       <Quantity>{likes}</Quantity>
     </Item>
   </Stats>
-</SocialProfile>;
+</SocialProfile>
 };
 
 Profile.propTypes = {
