@@ -11,6 +11,8 @@ export const theme = Object.freeze({
 
     statusOk: 'green',
     statusNotOk: 'red',
+
+    tableHead: 'lightblue',
   },
   foo: {
     widthOfItemSection: () => `${100 / dataLength}%`,

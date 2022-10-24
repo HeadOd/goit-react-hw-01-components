@@ -11,7 +11,7 @@ export const FriendList = ({ friends }) => {
     </FriendProfile>
     ))}
   </ListOfFriend>
-}
+};
 
 FriendList.propTypes = {
   friends: PropTypes.arrayOf(PropTypes.exact({
@@ -20,4 +20,4 @@ FriendList.propTypes = {
     name: PropTypes.string.isRequired,
     isOnline: PropTypes.bool.isRequired,
   })),
-}
+};
