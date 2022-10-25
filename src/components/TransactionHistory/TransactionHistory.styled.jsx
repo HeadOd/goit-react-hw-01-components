@@ -26,7 +26,7 @@ export const TableBody = styled.tbody `
 export const BodyLine = styled.tr `
   background-color: ${p => p.theme.colors.bgcCard};
 
-  :nth-child(2n) {
+  :nth-of-type(2n) {
     background-color: ${p => p.theme.colors.border};
   }
 `;
